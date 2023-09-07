@@ -7,5 +7,6 @@ from selenium.webdriver.support.select import Select
 # entrar no facebook
 print ('Iniciando...')
 # clicar em novo registro
+# dados manuais via script
 # preenchimemto automatico
 # cadastro
