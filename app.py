@@ -10,3 +10,4 @@ print ('Iniciando...')
 # dados manuais via script
 # preenchimemto automatico
 # cadastro
+# mostrar os dados para login
