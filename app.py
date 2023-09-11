@@ -29,9 +29,13 @@ criar.click()
 sleep(10)
 
 # preenchimemto automatico
-preencher_nome = driver.find_elements(By.XPATH, "//input[@class='inputtext _58mg _5dba _2ph-']")
-preencher_nome = preencher_nome[0]
+preenchimento = driver.find_elements(By.XPATH, "//input[@class='inputtext _58mg _5dba _2ph-']")
+preencher_nome = preenchimento[0]
 preencher_nome.send_keys(nome)
+sleep(1)
+
+preencher_sobrenome = preenchimento[1]
+preencher_sobrenome.send_keys(sobreNome)
 sleep(10)
 # cadastro
 # mostrar os dados para login
