@@ -5,12 +5,13 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.select import Select
 from design import linha
 from time import sleep
+import random
 
 #dados pessoais
 linha()
 nome = str(input('Digite o seu nome: ',))
 sobreNome = str(input('Digite o seu sobrenome: '))
-telefone = int(input('Digite o seu numero de telefone ou email: '))
+telefone = int(input('Digite o seu numero de telefone: '))
 linha()
 
 # entrar no facebook
@@ -40,6 +41,13 @@ sleep(1)
 
 preencher_telefone = preenchimento[2]
 preencher_telefone.send_keys(telefone)
+sleep(1)
+
+
+#senhas
+senha = 00000000
+buscarSenha = driver.find_element(By.XPATH, "//input[@id='password_step_input']")
+buscarSenha.send_keys(senha)
 sleep(10)
 # cadastro
 # mostrar os dados para login
