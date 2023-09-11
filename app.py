@@ -27,7 +27,10 @@ sleep(10)
 criar = driver.find_element(By.XPATH, "//a[@class='_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy']")
 criar.click()
 sleep(10)
-# dados manuais via script
+
 # preenchimemto automatico
+preencher_nome = driver.find_element(By.XPATH, "//input[@id='u_3_b_2f']")
+preencher_nome.send_keys(nome)
+sleep(10)
 # cadastro
 # mostrar os dados para login
