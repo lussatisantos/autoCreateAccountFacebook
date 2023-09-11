@@ -29,7 +29,8 @@ criar.click()
 sleep(10)
 
 # preenchimemto automatico
-preencher_nome = driver.find_element(By.XPATH, "//input[@class='inputtext _58mg _5dba _2ph-']")
+preencher_nome = driver.find_elements(By.XPATH, "//input[@class='inputtext _58mg _5dba _2ph-']")
+preencher_nome = preencher_nome[0]
 preencher_nome.send_keys(nome)
 sleep(10)
 # cadastro
