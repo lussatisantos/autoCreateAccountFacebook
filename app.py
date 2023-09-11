@@ -8,9 +8,9 @@ from time import sleep
 
 #dados pessoais
 linha()
-nome = str(input('Digite o seu nome:',))
+nome = str(input('Digite o seu nome: ',))
 sobreNome = str(input('Digite o seu sobrenome: '))
-telefone = int(input('Digite o seu numero de telefone: '))
+telefone = int(input('Digite o seu numero de telefone ou email: '))
 linha()
 
 # entrar no facebook
@@ -36,6 +36,10 @@ sleep(1)
 
 preencher_sobrenome = preenchimento[1]
 preencher_sobrenome.send_keys(sobreNome)
+sleep(1)
+
+preencher_telefone = preenchimento[2]
+preencher_telefone.send_keys(telefone)
 sleep(10)
 # cadastro
 # mostrar os dados para login
